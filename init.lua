@@ -50,6 +50,10 @@ function shell_mod.get_history()
     return history
 end
 
+function shell_mod.clear_history()
+    history = {}
+end
+
 -- EVENTS
 minetest.register_on_player_receive_fields(function(player, formname, fields)
     if formname == 'shell_mod' and fields['shell_mod:cmd'] then

@@ -17,3 +17,4 @@ This mod add game terminal for execute shell commands. Please, use *screen* or o
 
 * **shell_mod.open_shell(player_name, old, cmd)** - open terminal window. *old* - array (history), *cmd* - command for execute (string). *old* and *cmd* is optionally.
 * **shell_mod.get_history()** - get terminal history, return array
+* **shell_mod.clear_history()** - clear history

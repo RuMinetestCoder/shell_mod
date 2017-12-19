@@ -1,0 +1,7 @@
+# init.lua
+Go =
+Can use /shell =
+Can use /shell-clear =
+open shell window =
+clear shell history =
+shell history cleared =

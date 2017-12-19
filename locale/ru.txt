@@ -1,0 +1,7 @@
+# init.lua
+Go = Ввод
+Can use /shell = Для использования /shell
+Can use /shell-clear = Для использования /shell-clear
+open shell window = Открыть терминал
+clear shell history = очистить историю терминала
+shell history cleared = история терминала очищена

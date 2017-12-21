@@ -56,8 +56,9 @@ end
 
 -- EVENTS
 minetest.register_on_player_receive_fields(function(player, formname, fields)
-    if formname == 'shell_mod' and fields['shell_mod:cmd'] then
-        shell_mod.open_shell(player:get_player_name(), history, fields['shell_mod:cmd'])
+    local name = player:get_player_name();
+    if formname == 'shell_mod' and fields['shell_mod:cmd'] and minetest.check_player_privs(name, {shell_cmd=true}) then
+        shell_mod.open_shell(name, history, fields['shell_mod:cmd'])
     end
 end)
 
